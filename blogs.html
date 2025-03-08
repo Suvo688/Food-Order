@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts - Zaykaa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="blog-page">
+        <h1 class="heading">Our <span>Blog Posts</span></h1>
+
+        <!-- Blog Categories -->
+        <div class="blog-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="recipes">Recipes</button>
+            <button class="category-btn" data-category="health">Health</button>
+            <button class="category-btn" data-category="tips">Tips & Guides</button>
+        </div>
+
+        <!-- Blog Search -->
+        <div class="blog-search">
+            <input type="text" placeholder="Search blogs..." id="blog-search">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+            <!-- Blog posts will be dynamically loaded here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="pagination-btn" id="prev-page">
+                <i class="fas fa-chevron-left"></i> Previous
+            </button>
+            <div class="page-numbers">
+                <!-- Page numbers will be dynamically added -->
+            </div>
+            <button class="pagination-btn" id="next-page">
+                Next <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html> 

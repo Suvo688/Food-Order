@@ -1,0 +1,240 @@
+/* Blog Page Styles */
+.blog-page {
+    padding: 2rem 9%;
+}
+
+/* Blog Categories */
+.blog-categories {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--orange);
+    border-radius: 2rem;
+    background: none;
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background: var(--orange);
+    color: #fff;
+}
+
+/* Blog Search */
+.blog-search {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.blog-search input {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+}
+
+.blog-search i {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--light-color);
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card .content {
+    padding: 2rem;
+}
+
+/* Individual Blog Post Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.post-title {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-featured-image {
+    margin: 2rem 0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.post-featured-image img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--light-color);
+}
+
+/* Tags */
+.post-tags {
+    margin: 2rem 0;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #f5f5f5;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    color: var(--light-color);
+    font-size: 1.4rem;
+}
+
+/* Social Share */
+.social-share {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-share a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.social-share .facebook { background: #3b5998; }
+.social-share .twitter { background: #1da1f2; }
+.social-share .pinterest { background: #bd081c; }
+.social-share .whatsapp { background: #25d366; }
+
+/* Comments */
+.comment-form {
+    margin: 2rem 0;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.pagination-btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--orange);
+    border-radius: 0.5rem;
+    background: none;
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-page {
+        padding: 2rem;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-share {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-title {
+        font-size: 2.4rem;
+    }
+
+    .category-btn {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
+    }
+} 

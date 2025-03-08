@@ -1,0 +1,174 @@
+.feature-page {
+    padding: 2rem 9%;
+}
+
+.feature-banner {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.feature-banner .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-banner .banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-banner .heading {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.feature-content {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+/* Benefits Grid */
+.benefits-grid,
+.delivery-grid,
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.benefit-card,
+.delivery-card,
+.method-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover,
+.delivery-card:hover,
+.method-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card i,
+.delivery-card i,
+.method-card i {
+    font-size: 3rem;
+    color: var(--orange);
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3,
+.delivery-card h3,
+.method-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p,
+.delivery-card p,
+.method-card p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+/* Featured Products */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+/* Partners Grid */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.partner-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #f9f9f9;
+}
+
+.partner-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Delivery Tracking */
+.tracking-form {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.tracking-input {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-page {
+        padding: 2rem;
+    }
+
+    .feature-banner {
+        height: 30vh;
+    }
+
+    .tracking-form {
+        flex-direction: column;
+    }
+
+    .tracking-form .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefit-card,
+    .delivery-card,
+    .method-card {
+        padding: 1.5rem;
+    }
+
+    .benefit-card i,
+    .delivery-card i,
+    .method-card i {
+        font-size: 2.5rem;
+    }
+
+    .benefit-card h3,
+    .delivery-card h3,
+    .method-card h3 {
+        font-size: 1.8rem;
+    }
+} 
